@@ -1,0 +1,273 @@
+/* Google Fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: hsl(0, 0%, 100%);
+}
+.header {
+  margin-top: 100px;
+  margin-left: 80px;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif
+}
+#panel, #toggle-button {
+  transition: all 0.3s ease-in-out;
+}
+h1 {
+width: 630px;
+height: 38px;
+/* Number 34 pt/Bold */
+font-style: normal;
+font-weight: 700;
+font-size: 34px;
+line-height: 38px;
+/* identical to box height, or 112% */
+display: flex;
+align-items: center;
+color: #151517;
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+.Intro {
+  width: 630px;
+height: 22px;
+font-style: normal;
+font-weight: 500;
+margin-top: 24px;
+font-size: 16px;
+line-height: 22px;
+display: flex;
+align-items: center;
+color: #151517;
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+.navigation {
+  margin-top: 200px;
+  margin-left: 80px;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.panel-button {
+  display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 14px;
+gap: 8px;
+
+position: absolute;
+width: 52px;
+height: 52px;
+left: 1308px;
+top: 274px;
+
+background: linear-gradient(0deg, #081E34, #081E34), #F0F0F0;
+border-radius: 100px;
+  z-index: 1;
+}
+#plus-button {
+  display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 14px;
+gap: 8px;
+color: white;
+width: 24px;
+height: 24px;
+position: absolute;
+width: 52px;
+height: 52px;
+left: 1308px;
+top: 274px;
+
+background: linear-gradient(0deg, #081E34, #081E34), #F0F0F0;
+border-radius: 100px;
+}
+
+.plus {
+  font-size: 30px;
+  color: white;
+}
+
+.panel {
+  width: 0;
+  height: 0;
+  border: 2px solid blue;
+  border-radius: 5px;
+  background-color: gray;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  z-index: -1;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.panel-header {
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.panel-body {
+  background-color: white;
+  padding: 15px;
+}
+
+.input-container {
+  border: 1px solid gray;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  font-size: 16px;
+}
+
+.panel-button:focus + .panel {
+  width: 300px;
+  height: 200px;
+}
+
+.panel:active {
+  width: 300px;
+  height: 200px;
+}
+.panel:focus-within {
+  width: 300px;
+  height: 200px;
+}
+
+
+/* .circle-button {
+  display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 14px;
+gap: 8px;
+
+position: absolute;
+width: 52px;
+height: 52px;
+left: 1308px;
+top: 274px;
+
+background: linear-gradient(0deg, #081E34, #081E34), #F0F0F0;
+border-radius: 100px;
+} */
+.plus {
+  font-size: 30px;
+  color: white;
+  align-items: center;
+}
+button {
+  padding: 1.3em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #DCDCDC;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+button:hover {
+  background-color: #23c483;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+h2 {
+  width: 1280px;
+height: 28px;
+
+/* Headline M 24 pt/Bold */
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 28px;
+/* identical to box height, or 117% */
+
+display: flex;
+align-items: center;
+
+color: #151517;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+.Menu {
+  margin-top: 130px;
+  margin-left: 80px;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+hr {
+  width: 1280px;
+height: 2px;
+
+background: #151517;
+opacity: 0.2;
+
+/* Inside auto layout */
+margin-top: 24px;
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+.item-list {
+  margin-left: 80px;
+}
+button:active {
+  transform: translateY(-1px);
+}
+.form-check-input:checked + .form-check-label {
+  text-decoration: line-through
+}
+/* For Scrollbar */
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f2f2f2;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background: #ccc;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #aaa;
+}

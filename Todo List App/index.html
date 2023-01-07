@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<!-- Coding by CodingLab | www.codinglabweb.com-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Todo List </title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  
+    <!-- Unicons CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js">
+    <div id="particles-container"></div>
+  </script>
+    <header>
+      <div class="header">
+      <h1>Simple To Do List</h1>
+      <p class="Intro">Today is awesome day. The weather is awesome, you are awesome too!</p>
+    </div>
+
+    <div class="navigation">
+      <button>To Do</button>
+      <button>Done</button>
+      <button>Trash</button>
+    </div>
+    <div class="Menu">
+      <h2>Done</h2>
+      <hr></hr>
+    </div>
+
+    <button id="plus-button">
+      <div class="plus">+</div></button>
+    <!-- <button class="circle-button">
+      <div class="plus">+</div>
+    </button>     -->
+    <!-- <button class="panel-button">
+      <div class="plus">+</div>
+    </button>
+    <div class="panel">
+      <div class="panel-header">
+        To-Do List
+      </div>
+      <div class="panel-body">
+        <form>
+          <label class="checkbox-container">Item 1
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <br>
+          <label class="checkbox-container">Item 2
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <br>
+          <label class="checkbox-container">Item 3
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <br>
+          <div class="input-container">
+            <input type="text" placeholder="Enter your text here">
+            <input type="submit" value="Submit">
+          </div>
+        </form>
+      </div>
+    </div> -->
+    
+  
+    <!-- <div id="panel" style="display: flex; flex-direction: column; align-items: flex-start; padding: 16px; gap: 10px; position: absolute; 
+    width: 268px; height: 234px; left: 1015px; top: 92px; background: #E4E6E7; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16); border-radius: 12px;">
+      <h3>Add New To Do</h3>
+      <div style="background: white; padding: 10px; width: 236px; height: 120px; border-radius: 8px;">
+        <input type="text" placeholder="Enter new to do here">
+      </div>
+      <button id="add-button" style="background: rgba(8, 30, 52, 0.42); color: white; padding: 8px 16px;">Add</button>
+    </div>
+    <div>
+    <button id="toggle-button" style="display: none; background: rgba(21, 27, 22, 0.42); color: white; width: 50px; 
+    height: 150px; border-radius: 50%; font-size: 30px; margin-left: 28cm;">+</button>
+    </div> -->
+  
+
+
+    <div id="panel" style="display: flex; flex-direction: column; align-items: flex-start; padding: 16px; gap: 10px; position: absolute; width: 268px; height: 234px; left: 1015px; top: 92px; background: #E4E6E7; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16); border-radius: 12px;">
+      <h3>Add New To Do</h3>
+      <div style="background: white; padding: 10px; width: 236px; height: 120px; border-radius: 8px;">
+        <input id="task-input" type="text" placeholder="Your text">
+      </div>
+      <button id="add-button" style="background: rgba(8, 30, 52, 0.42); color: white; padding: 8px 16px;">Add</button>
+    </div>
+    
+    <div class="item-list">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+        <label class="form-check-label" for="flexCheckDefault">Write Essay</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+        <label class="form-check-label" for="flexCheckDefault">One Hour CSS Course Online</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+        <label class="form-check-label" for="flexCheckDefault">Buy One Way Tickets to San Fransico</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+        <label class="form-check-label" for="flexCheckDefault">Go to Gym</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked />
+        <label class="form-check-label" for="flexCheckChecked">Watch Vladimir Rus23 YouTube Channel</label>
+      </div>
+    </div>
+    
+    </header>
+
+<!--   
+    <div class="item-list">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"/>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+      <label class="form-check-label" for="flexCheckDefault">Write Essay</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+      <label class="form-check-label" for="flexCheckDefault">One Hour CSS Course Online</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+      <label class="form-check-label" for="flexCheckDefault">Buy One Way Tickets to San Fransico</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+      <label class="form-check-label" for="flexCheckDefault">Go to Gym</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked/>
+      <label class="form-check-label" for="flexCheckChecked">Watch Vladimir Rus23 YouTube Channel</label>
+    </div>
+    </div> -->
+    
+    <script src="./index.js"></script>
+  </body>
+</html>
